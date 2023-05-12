@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    tools:context=".activity.NewsDetailActivity">
+
+    <Toolbar
+        android:id="@+id/artToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_shade_1"
+        android:titleTextColor="@color/yellow"
+        android:title="Daily News"/>
+
+    <ImageView
+        android:id="@+id/bookMark"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_alignBottom="@+id/artToolbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/baseline_bookmark_24" />
+
+    <ScrollView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idBtnReadNews"
+        android:layout_below="@id/artToolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/idIVNews"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:padding="@dimen/_3sdp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/idTVTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:layout_below="@+id/idIVNews"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:padding="@dimen/_4sdp"
+                android:layout_margin="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/idTVSubDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Description"
+                android:layout_below="@+id/idTVTitle"
+                android:layout_margin="@dimen/_4sdp"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:id="@+id/idTVContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVSubDescription"
+                android:text="Content"
+                android:layout_margin="@dimen/_4sdp"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/idBtnReadNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:backgroundTint="@color/yellow"
+        android:text="Read Full News"
+        android:textAllCaps="false" />
+
+
+
+</RelativeLayout>

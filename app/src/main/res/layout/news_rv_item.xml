@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:cardBackgroundColor="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/idIVNews"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/idTVNewsHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVNews"
+            android:textColor="@color/yellow"
+            android:text="News Heading"
+            android:textStyle="bold"
+            android:textSize="@dimen/_18sdp"
+            android:padding="@dimen/_3sdp"
+            android:maxLines="2"
+            android:layout_margin="@dimen/_3sdp"/>
+
+        <TextView
+            android:id="@+id/idTVSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVNewsHeading"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:maxLines="3"
+            android:padding="@dimen/_3sdp"
+            android:text="Sub Heading"
+            android:textColor="@color/white" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
